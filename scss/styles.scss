@@ -1,3 +1,18 @@
+@import 'google-homepage';
+
 body {
     background: green;
+}
+
+//first frame
+img#line {
+    transform:scale(.5);
+    transiton: transform 1s;
+}
+
+//last frame
+
+img#line:hover{
+    transform:scale(1.25);
+    
 }
