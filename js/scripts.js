@@ -1,8 +1,8 @@
-var google = $('svg').drawsvg({
+var scar = $('svg').drawsvg({
   duration : 2000,
   
 });
 
 
 // Animate SVG points
-google.drawsvg('animate');
+scar.drawsvg('animate');
