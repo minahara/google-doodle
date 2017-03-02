@@ -1,13 +1,17 @@
 @import 'google-homepage';
 
 body {
-    background: green;
+    background: white;
 }
 
 //first frame
-img#line {
-    transform:scale(.5);
-    transiton: transform 1s;
+#g1,#g2,#l,#e, {
+  opacity: .5;
+}
+
+svg:hover g {
+  
+  transform: scale(1.1);
 }
 
 //last frame
