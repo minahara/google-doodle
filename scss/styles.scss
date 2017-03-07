@@ -16,7 +16,69 @@ svg:hover g {
 
 //last frame
 
-.st1,.st2 :active {
- fill: red;
-  
+#tape :active {
+  animation: fadeOutDown 2s;
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+@-webkit-keyframes fadeOutDownBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+@keyframes fadeOutDownBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+.fadeOutDownBig {
+  -webkit-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
+}
+
+//backround
+$bg0 : url(http://i.dailymail.co.uk/i/pix/2015/09/30/12/00ECCFB61000044C-0-image-a-33_1443611326611.jpg);
+$bg1 : url(http://sev.h-cdn.co/assets/15/36/1441130300-hogwartsexpress.png);
+$bg2 : url(https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F70371c31-7d4c-4b46-839f-3225d06f8f99.jpg);
+
+.bg0 {
+  background: $bg0;
+}
+
+.bg1 {
+  background: $bg1;
+}
+
+.bg2 {
+  background: $bg2;
 }
